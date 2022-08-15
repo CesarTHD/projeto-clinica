@@ -9,7 +9,7 @@ const PessoaRoute = require("./routes/PessoaRoute");
 
 
 mongoose
-	.connect("mongodb://localhost:27017/engenharia", { useNewUrlParser: true })
+	.connect("mongodb+srv://ruanvg:ESCOLA01@cluster0.rnxg0ym.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true })
 	.then(() => {
 		const app = express()
 		app.use(express.json()) // new
